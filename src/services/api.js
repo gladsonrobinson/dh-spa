@@ -20,7 +20,6 @@ const _formatJson = data => {
   let count = 1;
   for (let i = 0; i < data.list.length; i++) {
     let day = new Date(data.list[i].dt_txt).getDate();
-    console.log("hello", crntItemDay, day)
     if (crntItemDay) {
       if (crntItemDay !== day) {
         filterdList.push(data.list[i]);
