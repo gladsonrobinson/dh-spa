@@ -1,0 +1,27 @@
+.search-wrap {
+  width: 100%;
+  margin: 40px auto 0;
+}
+
+.search-wrap .search {
+  display: flex;
+  margin: 5px;
+  height: 40px;
+}
+
+.search-wrap .search-input {
+  border-radius: 5px;
+  font-size: 22px;
+  flex: 0 0 75%;
+}
+
+.search-wrap .search-btn {
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  flex: 0 0 25%;
+}

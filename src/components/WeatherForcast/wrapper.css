@@ -1,0 +1,55 @@
+.weather-forcast-list__grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-forcast-list__grid > .weather-forcast-list__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  flex: 0 0 100%;
+  height: 80px;
+  border-bottom: 1px solid #1111;
+}
+
+.weather-forcast-list__items .weather-forcast-list__item {
+  flex: 0 0 50%;
+  font-size: 20px;
+  color: #111111;
+}
+
+.weather-forcast-list__grid .weather-forcast-list__items p {
+  margin: 2px;
+}
+
+.weather-forcast-list__item__icon {
+  width: 30px;
+  height: 30px;
+}
+
+.weather-forcast-list__min,
+.weather-forcast-list__max {
+  display: inline-block;
+  min-width: 51px;
+  padding: 3px 5px;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  margin-right: 6px;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25em;
+}
+
+.weather-forcast-list__min {
+  background-color: rgb(76, 78, 78);
+}
+
+.weather-forcast-list__max {
+  background-color: rgb(76, 78, 78);
+}
