@@ -19,14 +19,17 @@ const _formatJson = data => {
   let filterdList = [];
   let count = 1;
   for (let i = 0; i < data.list.length; i++) {
+    let day = new Date(data.list[i].dt_txt).getDate();
+    console.log("hello", crntItemDay, day)
     if (crntItemDay) {
-      if (crntItemDay !== new Date(data.list[i].dt_txt).getDate()) {
+      if (crntItemDay !== day) {
         filterdList.push(data.list[i]);
-        crntItemDay = new Date(data.list[i].dt_txt);
+        crntItemDay = day;
+        count++;
       }
     } else {
       filterdList.push(data.list[i]);
-      count++;
+      crntItemDay = day;
     }
     if (count === 7) break;
   }
